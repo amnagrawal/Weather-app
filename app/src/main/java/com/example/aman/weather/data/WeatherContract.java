@@ -20,21 +20,21 @@ public class WeatherContract {
     Students: This is where you will add the strings. (Similar to what has been
     done for WeatherEntry)
     */
-    public static final class LocationEntry implements BaseColumns {
+    public static final class  LocationEntry implements BaseColumns {
         public static final String TABLE_NAME = "location";
 
         //The location setting string is what will be sent to openweathermap
         //as the location query
-        public static final String COLUMN_LOCATION_SETTING = "location setting";
+        public static final String COLUMN_LOCATION_SETTING = "location_setting";
 
         //Human readable location string, provided by the API. Because for styling
         //"Rohini" is more recognizable than 110092.
-        public static final String COLUMN_CITY_NAME = "city name";
+        public static final String COLUMN_CITY_NAME = "city_name";
 
         //In order to uniquely pinpoint the location on the map when we launch the
         //map intent, we store the latitude and longitude as returned by openweathermap.
-        public static final String COLUMN_COORD_LAT = "coord lat";
-        public static final String COLUMN_COORD_LONG = "coord long";
+        public static final String COLUMN_COORD_LAT = "coord_lat";
+        public static final String COLUMN_COORD_LONG = "coord_long";
     }
     /* Inner class that defines the table contents of the weather table */
     public static final class WeatherEntry implements BaseColumns {
